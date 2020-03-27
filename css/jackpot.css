@@ -1,0 +1,110 @@
+body {
+    background: #1b1e22;
+}
+
+.jackpot-container {
+    position: relative;
+}
+
+.jackpot-container .jackpot-row {
+    margin-bottom: 20px;
+}
+
+.jackpot-container .jackpot-content {
+    position: relative;
+}
+
+.jackpot-container .jackpot-content .jackpot-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    background:transparent;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+    transition: all 5s;
+}
+.jackpot-container .jackpot-content .jackpot-spinner img{
+    width: 100%;
+    margin-top:-5.5%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.jackpot-container .jackpot-content .jackpot-chart {
+    text-align: center;
+}
+
+.jackpot-container .jackpot-content .jackpot-state-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    background: #1b1e22;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+}
+
+.jackpot-round-info-container {
+    margin-left: 10px;
+    max-width: 700px;
+}
+.jackpot-round-info-container .jackpot-round-info {
+    background-color: #1b1e22;
+    border-radius: 8px;
+    padding: 10px 15px;
+    overflow-y: auto;
+}
+
+.jackpot-round-info-container .jackpot-round-info .jackpot-winner {
+    padding: 8px 12px;
+    border-radius: 8px;
+    position: relative;
+    margin: 20px 3px 5px;
+}
+
+.jackpot-round-info-container .jackpot-round-info .jackpot-winner .jackpot-winner-round-info {
+    color: #fcfcfc;
+    padding: 6px 0;
+}
+
+.jackpot-round-info-container .jackpot-round-info .jackpot-player {
+    padding: 3px 12px;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+.jackpot-round-info-container .jackpot-round-info .jackpot-player .player-highlight {
+    position: absolute;
+    bottom: -3px;
+    left: 5%;
+    right: 5%;
+    height: 3px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.jackpot-round-info-container .jackpot-round-info .jackpot-player .player-name {
+    color: #fff;
+    font-size: 15px;
+}
+.jackpot-round-info-container .jackpot-round-info .jackpot-player .deposit-count {
+    font-size: 17px;
+    color: #67696b;
+}
+.jackpot-round-info-container .jackpot-round-info .jackpot-player .deposit-value {
+    font-size: 21px;
+    color: #dfdfdf;
+}
+.jackpot-round-info-container .jackpot-round-info .jackpot-player .player-win-range {
+    font-size: 18px;
+}

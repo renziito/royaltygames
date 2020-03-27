@@ -1,0 +1,40 @@
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+# if a directory or a file exists, use it directly
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+<Files *.css>
+SetOutputFilter DEFLATE
+</Files>
+
+<Files *.js>
+SetOutputFilter DEFLATE
+</Files>
+
+#Cache html/htm/xml/txt/xsl/css/js/php diles for 480 weeks
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|svg|woff|woff2|ttf|eot)$">
+Header set Cache-Control "max-age=290304000, public, must-revalidate"
+</FilesMatch>
+
+#Cache xml/txt/css/js diles for 2 days
+<FilesMatch "\.(xml|txt|css|js|gz)$">
+Header set Cache-Control "max-age=172800, public, must-revalidate"
+Header append Vary Accept-Encoding
+</FilesMatch>
+
+#Cache html/htm/php diles for 2 hours
+<FilesMatch "\.(html|htm|php)$">
+Header set Cache-Control "no-cache, no-store, max-age=7200, must-revalidate"
+</FilesMatch>
+
+<IfModule mod_php5.c>
+   php_value upload_max_filesize 40M
+   php_value post_max_size 40M
+</IfModule>

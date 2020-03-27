@@ -1,0 +1,16 @@
+{
+    "name": "renziito/royaltygames",
+    "description": "royaltyGames",
+    "type": "project",
+    "require": {
+        "yiisoft/yii": "^1.1.22",
+        "league/oauth2-client": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Renziito",
+            "email": "sepia.aki@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
