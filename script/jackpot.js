@@ -6,6 +6,7 @@ var Jackpot = function (options) {
         roundStartIn: new Date(date.setSeconds(date.getSeconds() + 20)),
         gameStartIn: 5000,
         roundInfoContainer: document.getElementById('jackpot-round'),
+        url: ''
     };
 
     this.options = this.extend(defaults, options);
@@ -165,7 +166,7 @@ Jackpot.prototype.templateChart = function () {
     html += '<div class="jackpot-content">';
     html += '<div class="jackpot-chart"></div>';
     html += '<div class="jackpot-spinner" style="width: ' + spinnerDiv.width + 'px;height: ' + spinnerDiv.height + 'px; margin-left:-' + spinnerDiv.minHeight + 'px;margin-top:-' + spinnerDiv.minWidth + 'px;">';
-    html += '<img src="../css/arrow.png">';
+    html += '<img src="' + this.options.url + '/css/arrow.png">';
     html += '</div>';
     html += '<div class="jackpot-state-info" style="padding-top: 70px;width: ' + infoDiv.width + 'px;height: ' + infoDiv.height + 'px; margin-left:-' + infoDiv.minHeight + 'px;margin-top:-' + infoDiv.minWidth + 'px;">';
     html += '<div class="jackpot-row">';
@@ -260,26 +261,3 @@ Jackpot.prototype.drawChart = function () {
     var draw = this.chartContainer.getElementsByClassName('jackpot-chart');
     draw[0].appendChild(this.canvas);
 };
-
-var chart = new Jackpot({
-    chartHeight: 500
-});
-chart.bidUp({
-    name: 'Renziito',
-    total: 20
-});
-chart.bidUp({
-    name: 'Kaos',
-    total: 15
-});
-chart.bidUp({
-    name: 'Twitch',
-    total: 33
-});
-chart.bidUp({
-    name: 'StreamElements',
-    total: 45
-});
-
-chart.gameStart();
- 

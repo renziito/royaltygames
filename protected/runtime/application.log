@@ -1389,3 +1389,246 @@ Stack trace:
 REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
 HTTP_REFERER=http://localhost/royaltygames/site/index
 ---
+2020/03/27 13:42:29 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:43:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:44:56 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:45:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:45:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:47:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "undefined". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php:486
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined/...')
+#3 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\www\royaltygames\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/royaltygames/site/undefined/css/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:47:22 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:48:01 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "undefined". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php:486
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined/...')
+#3 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\www\royaltygames\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/royaltygames/site/undefined/css/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:48:03 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:48:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "undefined". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php:486
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined/...')
+#3 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\www\royaltygames\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/royaltygames/site/undefined/css/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:48:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:48:37 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "undefined". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php:486
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined/...')
+#3 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\www\royaltygames\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/royaltygames/site/undefined/css/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:48:41 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:48:54 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "undefined". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php:486
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined/...')
+#3 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\www\royaltygames\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/royaltygames/site/undefined/css/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:48:56 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:49:05 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "undefined". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php:486
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined/...')
+#3 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\www\royaltygames\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/royaltygames/site/undefined/css/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:49:07 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:49:22 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "undefined". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php:486
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined/...')
+#3 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\www\royaltygames\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/royaltygames/site/undefined/css/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:49:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:49:43 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:49:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "undefined". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php:486
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined/...')
+#3 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\www\royaltygames\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/royaltygames/site/undefined/css/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:49:57 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:50:24 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "undefined". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php:486
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined/...')
+#3 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\www\royaltygames\index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/royaltygames/site/undefined/css/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:50:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/03/27 13:50:58 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
