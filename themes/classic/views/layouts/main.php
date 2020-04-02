@@ -15,8 +15,6 @@
             </div>
 
         </div>
-
-        <script src="<?= Yii::app()->getBaseUrl() ?>/script/jackpot.js" type="text/javascript"></script>
         <script>
             $(document).ready(function () {
                 var Global = {
@@ -26,29 +24,6 @@
                     absoluteUrl: '<?= Yii::app()->getBaseUrl(true) ?>',
                     baseUrl: '<?= Yii::app()->baseUrl ?>',
                 };
-
-                var chart = new Jackpot({
-                    chartHeight: 500,
-                    url: Global.absoluteUrl
-                });
-                chart.bidUp({
-                    name: 'Renziito',
-                    total: 20
-                });
-                chart.bidUp({
-                    name: 'Kaos',
-                    total: 15
-                });
-                chart.bidUp({
-                    name: 'Twitch',
-                    total: 33
-                });
-                chart.bidUp({
-                    name: 'StreamElements',
-                    total: 45
-                });
-
-                chart.gameStart();
             });
         </script>
     </body>

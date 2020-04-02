@@ -19,7 +19,7 @@
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 <link href="<?= Yii::app()->getBaseUrl() ?>/css/main.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<link href="<?= Yii::app()->getBaseUrl() ?>/css/jackpot.css" rel="stylesheet" type="text/css" />
+<link href="<?= Yii::app()->getBaseUrl() ?>/protected/extensions/jackpot/dist/css/jackpot.min.css" rel="stylesheet" type="text/css" />
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 crossorigin="anonymous"></script>

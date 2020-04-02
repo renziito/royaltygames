@@ -1632,3 +1632,210 @@ Stack trace:
 REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
 HTTP_REFERER=http://localhost/royaltygames/site/index
 ---
+2020/04/02 05:02:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "extensiones/jackpot/dist/js/jackpot.es6.min.js". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('extensiones/jac...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/extensiones/jackpot/dist/js/jackpot.es6.min.js
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:02:17 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "extensiones/jackpot/dist/js/jackpot.es6.min.js". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('extensiones/jac...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/extensiones/jackpot/dist/js/jackpot.es6.min.js
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:02:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:09:30 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "extensiones/jackpot/dist/js/jackpot.es6.min.js". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('extensiones/jac...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/extensiones/jackpot/dist/js/jackpot.es6.min.js
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:09:30 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "extensiones/jackpot/dist/js/jackpot.es6.min.js". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('extensiones/jac...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/extensiones/jackpot/dist/js/jackpot.es6.min.js
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:09:30 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "extensiones/jackpot/dist/js/jackpot.es6.min.js". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('extensiones/jac...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/extensiones/jackpot/dist/js/jackpot.es6.min.js
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:10:09 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "extensiones/jackpot/dist/js/jackpot.es6.min.js". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('extensiones/jac...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/extensiones/jackpot/dist/js/jackpot.es6.min.js
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:10:10 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "extensiones/jackpot/dist/js/jackpot.es6.min.js". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('extensiones/jac...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/extensiones/jackpot/dist/js/jackpot.es6.min.js
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:10:15 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:10:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "extensions/jackpot/dist/js/jackpot.es6.min.js". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('extensions/jack...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/extensions/jackpot/dist/js/jackpot.es6.min.js
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:10:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "extensions/jackpot/dist/js/jackpot.es6.min.js". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('extensions/jack...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/extensions/jackpot/dist/js/jackpot.es6.min.js
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:11:05 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "dist/arrow.png". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dist/arrow.png')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/dist/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:11:38 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "dist/arrow.png". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dist/arrow.png')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/dist/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:11:41 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:12:21 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "dist/arrow.png". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dist/arrow.png')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/dist/arrow.png
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:16:03 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:20:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 05:32:44 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 06:16:08 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 07:18:22 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 07:19:43 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 07:19:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---
+2020/04/02 07:20:08 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/assets/images/favicon.ico". in E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\www\royaltygames\vendor\yiisoft\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 E:\www\royaltygames\vendor\yiisoft\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\www\royaltygames\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/royaltygames/themes/classic/assets/images/favicon.ico
+HTTP_REFERER=http://localhost/royaltygames/site/index
+---

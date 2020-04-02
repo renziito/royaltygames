@@ -53,31 +53,42 @@
 </style>
 <div class="row">
     <div class="col-md-9 col-height">
-        <div class="container-fluid">
-            <div class="row mb-5">
-                <div class="col-12">
-                    <span class="text-white"><b>KhaosGG</b></span>
-                    <span class="text-white float-right">User <b>10000</b></span>
+        <div class="row">
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <span class="text-white"><b>KhaosGG</b></span>
+                        <span class="text-white float-right">User <b>10000</b></span>
+                    </div>
                 </div>
-            </div>
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h1 class="text-white text-center">
-                        Jackpot
-                    </h1>
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h1 class="text-white text-center">
+                            Jackpot
+                        </h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div id="jackpot-canvas"></div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div id="jackpot-roulette"></div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div id="jackpot-round"></div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div id="jackpot-round"></div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <button></button>
+                    </div>
                 </div>
+
             </div>
         </div>
+
         <div class="clearfix"></div>
         <div class=" container-fluid  container-fixed-lg footer">
+
             <div class="copyright sm-text-center">
                 <p class="small no-margin pull-right sm-pull-reset">
                     <span class="hint-text">Copyright &copy; <?= date('Y') ?> </span>
@@ -87,7 +98,9 @@
                 </p>
                 <div class="clearfix"></div>
             </div>
+
         </div>
+
     </div>
     <div class="col-md-3 col-height">
         <div class="embed-container">
@@ -98,3 +111,62 @@
         </div>
     </div>
 </div>
+
+<script src="<?= Yii::app()->getBaseUrl(true) ?>/protected/extensions/jackpot/dist/js/jackpot.es6.min.js"></script>
+<script>
+    var jackpot = new Jackpot({
+        nextRoundIn: 5,
+        gameStartIn: 10,
+        url: '<?= Yii::app()->getBaseUrl(true) ?>/protected/extensions/jackpot/',
+        roulette: {
+            width: 500,
+            height: 500
+        },
+        onNextRound: function (scope) {
+            $("#addPLayer").prop("disabled", false);
+            var players = Math.floor(Math.random() * 4) + 1;
+            var countDown = setInterval(function () {
+                players--;
+                if (players > 0) {
+                    $("#addPLayer").trigger("click");
+                } else {
+                    clearInterval(countDown);
+                }
+            }, 2000);
+        },
+        onGameEnd: function (scope, winner, players) {
+            return new Promise(function (resolve, reject) {
+                console.log(winner);
+                console.log(players);
+                console.log(scope.getTotalCurrentRound());
+                console.log(scope.roundID);
+                resolve();
+                /*
+                 $.post("server.php", {
+                 a: winner,
+                 b: players,
+                 c: scope.getTotalCurrentRound(),
+                 d: scope.roundID
+                 }, function (response) {
+                 resolve(response);
+                 });
+                 */
+            });
+        },
+        onClickPlayer: function (scope, player) {
+            console.log("player", player);
+        },
+        onClickWinner: function (scope, winner) {
+            console.log("winner", winner);
+        }
+    });
+
+    jackpot.init();
+
+    $("#addPLayer").on('click', () => {
+        jackpot.bidUp({
+            name: `Player ${parseInt(Math.random() * 7200)}`,
+            total: Math.random() * (10 - 100) + 100
+        });
+    });
+</script>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/jackpot.min.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h1 class="text-white text-center">
+                    Jackpot
+                </h1>
+                <div class="text-center">
+                    <button id="addPLayer" disabled class="btn btn-success">Add Player</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-7">
+                <div id="jackpot-roulette"></div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div id="jackpot-round"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="../dist/js/jackpot.es6.min.js"></script>
+    <script>
+        var jackpot = new Jackpot({
+            nextRoundIn: 5,
+            gameStartIn: 10,
+            roulette: {
+                width: 593,
+                height: 593
+            },
+            onNextRound: function (scope) {
+                $("#addPLayer").prop("disabled", false);
+                var players = Math.floor(Math.random() * 4) + 1;
+                var countDown = setInterval(function () {
+                    players--;
+                    if (players > 0) {
+                        $("#addPLayer").trigger("click");
+                    } else {
+                        clearInterval(countDown);
+                    }
+                }, 2000);
+            },
+            onGameEnd: function (scope, winner, players) {
+                return new Promise(function (resolve, reject) {
+                    $.post("server.php", {
+                        a: winner,
+                        b: players,
+                        c: scope.getTotalCurrentRound(),
+                        d: scope.roundID
+                    }, function (response) {
+                        resolve(response);
+                    });
+                });
+            },
+            onClickPlayer: function (scope, player) {
+                console.log("player", player);
+            },
+            onClickWinner: function (scope, winner) {
+                console.log("winner", winner);
+            }
+        });
+
+        jackpot.init();
+
+        $("#addPLayer").on('click', () => {
+            jackpot.bidUp({
+                name: `Player ${parseInt(Math.random() * 7200)}`,
+                total: Math.random() * (10 - 100) + 100
+            });
+        });
+    </script>
+</body>
+
+</html>
