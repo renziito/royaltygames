@@ -1,3 +1,167 @@
-body{background:#1b1e22}.jackpot-round{margin-left:10px;max-height:500px;overflow-y:auto}.jackpot-round-info{border-radius:8px;padding:10px 15px;background-color:#1b1e22}.jackpot-round-player{flex:1;display:flex;flex-direction:row;padding:3px 12px;justify-content:space-between;border-radius:8px;position:relative;margin:15px 0;cursor:pointer}.jackpot-round-player-highlight{position:absolute;bottom:-3px;left:5%;right:5%;height:3px;border-bottom-left-radius:12px;border-bottom-right-radius:12px}.jackpot-round-player-separator{width:2px;-ms-grid-row-align:center;align-self:center;height:60px;background-image:linear-gradient(transparent, #323438, transparent);margin:0 10px}.jackpot-round-player-info span{color:#fff;font-size:15px}.jackpot-round-player-info h3{font-size:18px}.jackpot-round-player .jackpot-round-box{-ms-grid-row-align:center;align-self:center;flex:1;color:white}.jackpot-round-player-deposit{text-align:right}.jackpot-round-player-deposit span{font-size:17px;color:#67696b}.jackpot-round-player-deposit h4{font-size:21px;color:#dfdfdf}.jackpot-round-winner{display:flex;flex-direction:row;padding:8px 12px;justify-content:flex-start;border-radius:8px;position:relative;margin:20px 3px 5px;overflow:hidden;cursor:pointer}.jackpot-round-winner-user{flex:0 0 auto;align-self:center;display:flex;flex-direction:column}.jackpot-round-winner-user span{color:#c5cdd0;font-size:17px}.jackpot-round-winner-user h3{color:#fcfcfc;font-size:21px;font-weight:700}.jackpot-round-winner-nouser{flex:0 0 auto;align-self:center;display:flex;flex-direction:column}.jackpot-round-winner-nouser span{color:#fcfcfc;font-size:21px;font-weight:700}.jackpot-round-winner-info{color:#fcfcfc;padding:6px 0;flex:0 0 auto;-ms-grid-row-align:center;align-self:center;flex:1}.jackpot-round-winner-info h2{font-size:19px;line-height:19px;font-weight:700}.jackpot-round-winner-info span{font-size:14px}.jackpot-roulette{position:relative;text-align:center}.jackpot-roulette-spinner{position:absolute;top:50%;left:50%;border-radius:50%;transition:all 5s;background-repeat:no-repeat;background-position:top;background-size:contain;z-index:1}.jackpot-roulette-spinner img{width:100%;margin-top:-7.5%}.jackpot-roulette-info{text-align:center;position:absolute;top:50%;border:1px solid #1a1b20;left:50%;border-radius:50%;background:repeating-linear-gradient(135deg, #1c1f24, #1c1f24 20px, #202328 20px, #202328 40px) #202328;z-index:2}.jackpot-roulette-info-total,.jackpot-roulette-info-state{padding:5vmin}.jackpot-roulette-info-total span,.jackpot-roulette-info-state span{color:#494b4f;font-size:1.5vmin;letter-spacing:2px}.jackpot-roulette-info-total h3,.jackpot-roulette-info-state h3{color:#fff;font-weight:700;font-size:3.4vmin;line-height:3.4vmin}
+body {
+    background: #1b1e22;
+}
+.jackpot-round {
+    margin-left: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.jackpot-round-info {
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: #1b1e22;
+}
+.jackpot-round-player {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 3px 12px;
+    justify-content: space-between;
+    border-radius: 8px;
+    position: relative;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.jackpot-round-player-highlight {
+    position: absolute;
+    bottom: -3px;
+    left: 5%;
+    right: 5%;
+    height: 3px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.jackpot-round-player-separator {
+    width: 2px;
+    -ms-grid-row-align: center;
+    align-self: center;
+    height: 60px;
+    background-image: linear-gradient(transparent, #323438, transparent);
+    margin: 0 10px;
+}
+.jackpot-round-player-info span {
+    color: #fff;
+    font-size: 15px;
+}
+.jackpot-round-player-info h3 {
+    font-size: 18px;
+}
+.jackpot-round-player .jackpot-round-box {
+    -ms-grid-row-align: center;
+    align-self: center;
+    flex: 1;
+    color: white;
+}
+.jackpot-round-player-deposit {
+    text-align: right;
+}
+.jackpot-round-player-deposit span {
+    font-size: 17px;
+    color: #67696b;
+}
+.jackpot-round-player-deposit h4 {
+    font-size: 21px;
+    color: #dfdfdf;
+}
+.jackpot-round-winner {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 12px;
+    justify-content: flex-start;
+    border-radius: 8px;
+    position: relative;
+    margin: 20px 3px 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jackpot-round-winner-user {
+    flex: 0 0 auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.jackpot-round-winner-user span {
+    color: #c5cdd0;
+    font-size: 17px;
+}
+.jackpot-round-winner-user h3 {
+    color: #fcfcfc;
+    font-size: 21px;
+    font-weight: 700;
+}
+.jackpot-round-winner-nouser {
+    flex: 0 0 auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.jackpot-round-winner-nouser span {
+    color: #fcfcfc;
+    font-size: 21px;
+    font-weight: 700;
+}
+.jackpot-round-winner-info {
+    color: #fcfcfc;
+    padding: 6px 0;
+    flex: 0 0 auto;
+    -ms-grid-row-align: center;
+    align-self: center;
+    flex: 1;
+}
+.jackpot-round-winner-info h2 {
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: 700;
+}
+.jackpot-round-winner-info span {
+    font-size: 14px;
+}
+.jackpot-roulette {
+    position: relative;
+    text-align: center;
+}
+.jackpot-roulette-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transition: all 5s;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-color: #1B1E22;
+    z-index: 1;
+}
+.jackpot-roulette-spinner img {
+    width: 100%;
+    margin-top: -7.5%;
+}
+.jackpot-roulette-info {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    border: 1px solid #1a1b20;
+    left: 50%;
+    border-radius: 50%;
+    background: repeating-linear-gradient(135deg, #1c1f24, #1c1f24 20px, #202328 20px, #202328 40px) #202328;
+    z-index: 2;
+}
+.jackpot-roulette-info-total,
+.jackpot-roulette-info-state {
+    padding: 4vmin;
+}
+.jackpot-roulette-info-total span,
+.jackpot-roulette-info-state span {
+    color: #494b4f;
+    font-size: 1.5vmin;
+    letter-spacing: 2px;
+}
+.jackpot-roulette-info-total h3,
+.jackpot-roulette-info-state h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.8vmin;
+    line-height: 2.8vmin;
+}
 
 /*# sourceMappingURL=jackpot.min.css.map */

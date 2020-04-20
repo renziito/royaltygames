@@ -1,0 +1,16 @@
+{
+    "name": "jnolbertovm/jackpot",
+    "description": "JackPot",
+    "type": "project",
+    "require": {
+        "ktamas77/firebase-php": "^2.2",
+        "yiisoft/yii": "^1.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nolberto Vilchez",
+            "email": "jnolbertovm@gmail.com"
+        }
+    ]
+}

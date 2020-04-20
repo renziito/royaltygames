@@ -1,3 +1,10 @@
+<?php
+
+function flotRandom($min = 1, $max = 99, $decimals = 4) {
+    $scale = pow(10, $decimals);
+    return mt_rand($min * $scale, $max * $scale) / $scale;
+}
+?>
 <style>
     .col-height {
         height: 100vh;
@@ -57,8 +64,17 @@
             <div class="container-fluid">
                 <div class="row mb-5">
                     <div class="col-12">
-                        <span class="text-white"><b>KhaosGG</b></span>
-                        <span class="text-white float-right">User <b>10000</b></span>
+                        <div class="text-white text-center">
+                            <span class="text-white float-left"><?= $data['display_name'] ?>
+                                <b id="points"><?= $data['points'] ?></b>
+                            </span>
+                            <b>KhaosGG</b>
+                            <span class="float-right">
+                                <a class="btn btn-xs btn-primary" href="<?= Yii::app()->createUrl('logout') ?>">
+                                    Cerrar Sesión <i class="fas fa-sign-out-alt"></i>
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="row mb-5">
@@ -71,36 +87,21 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div id="jackpot-roulette"></div>
+                        <div class="clearfix"></div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <input type="hidden" id="name" value="<?= $data['display_name'] ?>"/>
+                                <input type="number" id="beatAmount" value="1"  class="form-control-sm" step=".1"/>
+                                <button class="btn btn-sm btn-danger" id="addBeat">Make a Bet</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div id="jackpot-round"></div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <button></button>
-                    </div>
-                </div>
-
             </div>
         </div>
-
-        <div class="clearfix"></div>
-        <div class=" container-fluid  container-fixed-lg footer">
-
-            <div class="copyright sm-text-center">
-                <p class="small no-margin pull-right sm-pull-reset">
-                    <span class="hint-text">Copyright &copy; <?= date('Y') ?> </span>
-                    <span class="font-montserrat"><?= $_SERVER['HTTP_HOST'] ?></span>.
-                    <span class="hint-text">All rights reserved. </span>
-                    <span class="hint-text">Made with Love <i class="fas fa-heart text-danger"></i></span>
-                </p>
-                <div class="clearfix"></div>
-            </div>
-
-        </div>
-
     </div>
     <div class="col-md-3 col-height">
         <div class="embed-container">
@@ -112,61 +113,77 @@
     </div>
 </div>
 
-<script src="<?= Yii::app()->getBaseUrl(true) ?>/protected/extensions/jackpot/dist/js/jackpot.es6.min.js"></script>
+<script src="<?= Yii::app()->getBaseUrl(true) ?>/protected/extensions/jackpot/dist/js/jackpot.min.js"></script>
 <script>
-    var jackpot = new Jackpot({
-        nextRoundIn: 5,
-        gameStartIn: 10,
-        url: '<?= Yii::app()->getBaseUrl(true) ?>/protected/extensions/jackpot/',
+    var jackpot = new JackPot({
         roulette: {
-            width: 500,
-            height: 500
+            height: 592,
+            width: 592,
         },
-        onNextRound: function (scope) {
-            $("#addPLayer").prop("disabled", false);
-            var players = Math.floor(Math.random() * 4) + 1;
-            var countDown = setInterval(function () {
-                players--;
-                if (players > 0) {
-                    $("#addPLayer").trigger("click");
+        spinner: {
+            img: '<?= Yii::app()->homeUrl ?>/protected/extensions/jackpot/dist/arrow.png'
+        },
+        firebase: {
+            apiKey: "AIzaSyApd6cxR14IUKR93jwnbLy68zPzLUL45qU",
+            authDomain: "royaltygames-5d879.firebaseapp.com",
+            databaseURL: "https://royaltygames-5d879.firebaseio.com",
+            projectId: "royaltygames-5d879",
+            storageBucket: "royaltygames-5d879.appspot.com",
+            messagingSenderId: "311098795508",
+            appId: "1:311098795508:web:353bd1af82d2d94807c5a1",
+            measurementId: "G-EXPVPVSTYP"
+        },
+        onGameStart: function (scope) {
+            $.get("<?= $this->createUrl('getPoints') ?>", {}, function (data) {
+                if (data) {
+                    $('#points').html(data.points);
                 } else {
-                    clearInterval(countDown);
+                    location.href = "<?= Yii::app()->createUrl('login') ?>";
                 }
-            }, 2000);
+            }, 'json');
+            $("#addBeat").prop("disabled", false);
         },
-        onGameEnd: function (scope, winner, players) {
-            return new Promise(function (resolve, reject) {
-                console.log(winner);
-                console.log(players);
-                console.log(scope.getTotalCurrentRound());
-                console.log(scope.roundID);
-                resolve();
-                /*
-                 $.post("server.php", {
-                 a: winner,
-                 b: players,
-                 c: scope.getTotalCurrentRound(),
-                 d: scope.roundID
-                 }, function (response) {
-                 resolve(response);
-                 });
-                 */
-            });
-        },
-        onClickPlayer: function (scope, player) {
-            console.log("player", player);
-        },
-        onClickWinner: function (scope, winner) {
-            console.log("winner", winner);
+        onGameEnd: function (scope) {
+            $.get("<?= $this->createUrl('getPoints') ?>", {}, function (data) {
+                if (data) {
+                    $('#points').html(data.points);
+                } else {
+                    location.href = "<?= Yii::app()->createUrl('login') ?>";
+                }
+            }, 'json');
+            $("#addBeat").prop("disabled", true);
         }
     });
 
     jackpot.init();
 
-    $("#addPLayer").on('click', () => {
-        jackpot.bidUp({
-            name: `Player ${parseInt(Math.random() * 7200)}`,
-            total: Math.random() * (10 - 100) + 100
-        });
+    $("#addBeat").on('click', function () {
+        var points = $('#points').html();
+        var amount = $("#beatAmount").val();
+        var name = $("#name").val();
+        if (amount > 0 || amount != "") {
+            var am = (parseFloat(amount) * 1000);
+
+            if (am <= points) {
+                $('#points').html(points - am);
+                var ajax = new Promise(function (resolve, reject) {
+                    $.post("<?= $this->createUrl('addPlayer') ?>", {
+                        player: {
+                            rid: jackpot.id,
+                            uid: <?= Yii::app()->request->cookies['uuid'] ?>,
+                            name: '<?= Yii::app()->request->cookies['name'] ?>',
+                            bet: amount
+                        }
+                    }, function (response) {
+                        if (!response.error) {
+                            resolve(response.data);
+                        }
+                    }, 'json');
+                });
+                $("#addBeat").prop('disabled', true);
+            } else {
+                alert("No se puede apostar esa cantidad");
+            }
+        }
     });
 </script>

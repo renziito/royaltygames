@@ -423,7 +423,7 @@ class StreamElements
      */
     public function addPoints($user, $amount)
     {
-        $amount = (int)$amount;
+//        $amount = (int)$amount;
         $url = 'points/' . $this->channelId . '/' . $user . '/' . $amount;
         $res = $this->sendRequest('PUT', $url);
         return $res;

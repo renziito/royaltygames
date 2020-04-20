@@ -4,7 +4,8 @@
     "type": "project",
     "require": {
         "yiisoft/yii": "^1.1.22",
-        "league/oauth2-client": "dev-master"
+        "league/oauth2-client": "dev-master",
+        "ktamas77/firebase-php": "dev-master"
     },
     "authors": [
         {

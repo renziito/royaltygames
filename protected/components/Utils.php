@@ -6,10 +6,10 @@
 class Utils {
 
     public static $busqueda = [
-        'select'    => '*',
+        'select' => '*',
         'condition' => '',
-        'params'    => [],
-        'order'     => ''
+        'params' => [],
+        'order' => ''
     ];
 
     public static function show($data, $detenerProcesos = false, $titulo = 'Datos') {
@@ -24,7 +24,7 @@ class Utils {
 
     public static function setBusqueda($buscar, $select = false, $order = false) {
         $condition = '';
-        $params    = [];
+        $params = [];
         if (is_array($buscar)) {
             $and = 'AND ';
             foreach ($buscar as $key => $val) {
@@ -38,19 +38,19 @@ class Utils {
                         if ($val == ':nonull') {
                             $condition .= "{$key} is not null {$and}";
                         } else {
-                            $condition           .= "{$key} = :{$valor} {$and}";
+                            $condition .= "{$key} = :{$valor} {$and}";
                             $params[":{$valor}"] = $val;
                         }
                     }
                 }
             }
 
-            $condition                   = substr($condition, 0, -(strlen($and)));
+            $condition = substr($condition, 0, -(strlen($and)));
             self::$busqueda['condition'] = $condition;
-            self::$busqueda['params']    = $params;
+            self::$busqueda['params'] = $params;
         } else {
             $condition = $buscar;
-            $params    = $buscar;
+            $params = $buscar;
         }
 
 
@@ -202,6 +202,68 @@ class Utils {
         }
 
         return $string;
+    }
+
+    public static function addSecondsToDate($secons, $date = 'now', $timestamp = false) {
+        if (!$timestamp) {
+            $dateAdd = new DateTime($date);
+        } else {
+            $dateAdd = new DateTime();
+            $dateAdd->setTimestamp($date);
+        }
+        $dateAdd->add(new DateInterval("PT{$secons}S"));
+
+        return $dateAdd->getTimestamp();
+    }
+
+    public static function getTimestamp($date = 'now') {
+        $timestamp = new DateTime($date);
+
+        return $timestamp->getTimestamp();
+    }
+
+    public static function calculateRandom($laps) {
+        $rand = (float) rand() / (float) getrandmax();
+        return round($rand * ((360 * $laps) - (360 * 10)) + (360 * 10), 10);
+    }
+
+    public static function calculateAngle($random) {
+        $angle = $random / 360;
+        return round(($angle - (int) $angle) * 360, 10);
+    }
+
+    public static function calculateTicket($angle) {
+        return round(($angle / 360) * 100, 10);
+    }
+
+    public static function flotRandom($min = 1, $max = 99, $decimals = 4) {
+        $scale = pow(10, $decimals);
+        return mt_rand($min * $scale, $max * $scale) / $scale;
+    }
+
+    public static function randomColorPart() {
+        return str_pad(dechex(mt_rand(0, 255)), 2, '0', STR_PAD_LEFT);
+    }
+
+    public static function randomColor() {
+        return "#" . self::randomColorPart() . self::randomColorPart() . self::randomColorPart();
+    }
+
+    public static function hex2rgb($hex) {
+        $hex = str_replace("#", "", $hex);
+
+        if (strlen($hex) == 3) {
+            $r = hexdec(substr($hex, 0, 1) . substr($hex, 0, 1));
+            $g = hexdec(substr($hex, 1, 1) . substr($hex, 1, 1));
+            $b = hexdec(substr($hex, 2, 1) . substr($hex, 2, 1));
+        } else {
+            $r = hexdec(substr($hex, 0, 2));
+            $g = hexdec(substr($hex, 2, 2));
+            $b = hexdec(substr($hex, 4, 2));
+        }
+        $rgb = array($r, $g, $b);
+        //return implode(",", $rgb); // returns the rgb values separated by commas
+        return $rgb; // returns an array with the rgb values
     }
 
 }
