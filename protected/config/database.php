@@ -12,8 +12,8 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
     $config = array(
         'connectionString' => 'mysql:host=localhost;dbname=jackpot',
         'emulatePrepare' => true,
-        'username' => 'root',
-        'password' => 'xH$c9*M6sfAh',
+        'username' => 'username',
+        'password' => 'wordPa$$1',
         'charset' => 'utf8',
     );
 }
