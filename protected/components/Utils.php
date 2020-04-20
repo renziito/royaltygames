@@ -266,4 +266,12 @@ class Utils {
         return $rgb; // returns an array with the rgb values
     }
 
+    public static function getSEToken() {
+        $settings = SettingsAdminModel::model()->find('state = TRUE');
+        if ($settings) {
+            return $settings->token;
+        }
+        return Globals::SE_TOKEN;
+    }
+
 }

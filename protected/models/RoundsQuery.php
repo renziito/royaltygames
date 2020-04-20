@@ -17,7 +17,7 @@ class RoundsQuery {
             }
         }
         $total = self::sumTotalByRound($roundID);
-        $se = new StreamElements(Globals::SE_TOKEN, 'Bearer');
+        $se = new StreamElements(Utils::getSEToken(), 'Bearer');
         $se->addPoints($username, $total * 1000);
 
         $model = new RoundWinnersModel();

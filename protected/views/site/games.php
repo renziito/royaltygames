@@ -4,6 +4,8 @@ function flotRandom($min = 1, $max = 99, $decimals = 4) {
     $scale = pow(10, $decimals);
     return mt_rand($min * $scale, $max * $scale) / $scale;
 }
+
+$admins = ['renziito', 'khaosgg'];
 ?>
 <style>
     .col-height {
@@ -71,7 +73,10 @@ function flotRandom($min = 1, $max = 99, $decimals = 4) {
                             <b>KhaosGG</b>
                             <span class="float-right">
                                 <a class="btn btn-xs btn-primary" href="<?= Yii::app()->createUrl('logout') ?>">
-                                    Cerrar Sesión <i class="fas fa-sign-out-alt"></i>
+                                    Log Out <i class="fas fa-sign-out-alt"></i>
+                                </a>
+                                <a class="btn btn-xs btn-success" href="<?= $this->createUrl('admin') ?>">
+                                    Admin <i class="fas fa-key"></i>
                                 </a>
                             </span>
                         </div>
@@ -105,10 +110,10 @@ function flotRandom($min = 1, $max = 99, $decimals = 4) {
     </div>
     <div class="col-md-3 col-height">
         <div class="embed-container">
-            <iframe scrolling="no" class="mi-iframe" frameborder="0" src="https://player.twitch.tv?channel=renziito"></iframe>
+            <iframe scrolling="no" class="mi-iframe" frameborder="0" src="https://player.twitch.tv?channel=khaosgg"></iframe>
         </div>
         <div class="embed-container-large" style="margin-top: 10px;">
-            <iframe scrolling="no" class="mi-iframe" frameborder="0" src="https://www.twitch.tv/embed/renziito/chat?darkpopout"></iframe>
+            <iframe scrolling="no" class="mi-iframe" frameborder="0" src="https://www.twitch.tv/embed/khaosgg/chat?darkpopout"></iframe>
         </div>
     </div>
 </div>

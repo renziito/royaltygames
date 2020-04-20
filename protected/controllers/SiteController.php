@@ -54,7 +54,7 @@ class SiteController extends Controller {
             $user = json_decode(curl_exec($curl), true);
             $data = [];
             if (isset($user['data'][0])) {
-                $se = new StreamElements(Globals::SE_TOKEN, 'Bearer');
+                $se = new StreamElements(Utils::getSEToken(), 'Bearer');
                 $data = array_merge($user['data'][0], $se->getPoints($user['data'][0]['login']));
                 $id = new CHttpCookie('uuid', $data['id']);
                 Yii::app()->request->cookies['uuid'] = $id;
@@ -86,18 +86,6 @@ class SiteController extends Controller {
             Yii::app()->request->redirect('login');
         }
 
-//        $user['data'][0] = [
-//            'id' => 173653284,
-//            'login' => 'renziito',
-//            'display_name' => 'Renziito',
-//            'type' => '',
-//            'broadcaster_type' => 'affiliate',
-//            'description' => '🇵🇪 Games : R6 |Arma3 | CoD Mobile',
-//            'profile_image_url' => 'https://static-cdn.jtvnw.net/jtv_user_pictures/2b73ee0f-3397-492f-bc96-26c1ffd526c3-profile_image-300x300.png',
-//            'offline_image_url' => 'https://static-cdn.jtvnw.net/jtv_user_pictures/84526628-6e31-45d1-a5f1-a1b9b7d0cd78-channel_offline_image-1920x1080.png',
-//            'view_count' => 7229
-//        ];
-
         $this->render('games', ['data' => $this->getPoints()]);
     }
 
@@ -126,7 +114,7 @@ class SiteController extends Controller {
             $model->bet = $post["bet"];
             $model->date_created = (new DateTime())->format("Y-m-d H:i:s");
 
-            $se = new StreamElements(Globals::SE_TOKEN, 'Bearer');
+            $se = new StreamElements(Utils::getSEToken(), 'Bearer');
 
             $se->addPoints($post["name"], ($post["bet"] * -1000));
 
@@ -194,6 +182,22 @@ class SiteController extends Controller {
             else
                 Utils::show($error);
         }
+    }
+
+    public function actionAdmin() {
+        $token = Yii::app()->request->getPost('jwtToken');
+        $setoken = Utils::getSEToken();
+        Utils::show($setoken);
+
+        if ($token) {
+            SettingsAdminModel::model()->updateAll(['state' => False], 'state = TRUE');
+
+            $model = new SettingsAdminModel();
+            $model->token = $token;
+            $model->save();
+        }
+
+        $this->render('admin');
     }
 
 }
