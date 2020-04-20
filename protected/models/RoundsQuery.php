@@ -34,8 +34,8 @@ class RoundsQuery {
     }
 
     public static function sumTotalByRound($roundID) {
-        $sql = "SELECT sum(bet) FROM round_players where";
-        $sql += "round_id = " . $roundID . " and status = 1 ";
+        $sql = "SELECT Round(SUM(bet),2) FROM round_players where";
+        $sql .= " round_id = " . $roundID . " and status = 1 and bet is not null";
         return Yii::app()->db->createCommand($sql)->queryScalar();
     }
 
