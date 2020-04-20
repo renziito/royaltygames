@@ -58,7 +58,7 @@ $admins = ['renziito', 'khaosgg'];
         } 
 
     }
-
+    ()?:
 </style>
 <div class="row">
     <div class="col-md-9 col-height">
@@ -68,7 +68,7 @@ $admins = ['renziito', 'khaosgg'];
                     <div class="col-12">
                         <div class="text-white text-center">
                             <span class="text-white float-left"><?= $data['display_name'] ?>
-                                <b id="points"><?= $data['points'] ?></b>
+                                <b id="points"><?= (isset($data['points']) ? $data['points'] : 0) ?></b>
                             </span>
                             <b>KhaosGG</b>
                             <span class="float-right">
