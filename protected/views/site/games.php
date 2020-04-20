@@ -121,7 +121,7 @@ function flotRandom($min = 1, $max = 99, $decimals = 4) {
             width: 592,
         },
         spinner: {
-            img: '<?= Yii::app()->homeUrl ?>/protected/extensions/jackpot/dist/arrow.png'
+            img: '<?= Yii::app()->homeUrl ?>protected/extensions/jackpot/dist/arrow.png'
         },
         firebase: {
             apiKey: "AIzaSyApd6cxR14IUKR93jwnbLy68zPzLUL45qU",
