@@ -75,9 +75,11 @@ $admins = ['renziito', 'khaosgg'];
                                 <a class="btn btn-xs btn-primary" href="<?= Yii::app()->createUrl('logout') ?>">
                                     Log Out <i class="fas fa-sign-out-alt"></i>
                                 </a>
-                                <a class="btn btn-xs btn-success" href="<?= $this->createUrl('admin') ?>">
-                                    Admin <i class="fas fa-key"></i>
-                                </a>
+                                <?php if (in_array($data['display_name'], $admins)): ?>
+                                    <a class="btn btn-xs btn-success" href="<?= $this->createUrl('admin') ?>">
+                                        Admin <i class="fas fa-key"></i>
+                                    </a>
+                                <?php endif; ?>
                             </span>
                         </div>
                     </div>
