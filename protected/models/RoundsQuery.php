@@ -6,7 +6,6 @@ class RoundsQuery {
         $players = self::getAllPlayers($roundID);
         $winnerID = 0;
         $username = "";
-        $total = 0;
 
         foreach ($players as $player) {
             $start = ($player["percent_start"] * 100);
@@ -16,10 +15,10 @@ class RoundsQuery {
                 $username = $player["user_name"];
                 break;
             }
-            $total += $player["bet"];
         }
+        $total = self::sumTotalByRound($roundID);
         $se = new StreamElements(Globals::SE_TOKEN, 'Bearer');
-        $se->addPoints($username, $total*1000);
+        $se->addPoints($username, $total * 1000);
 
         $model = new RoundWinnersModel();
 
@@ -32,6 +31,12 @@ class RoundsQuery {
         }
 
         return $model;
+    }
+
+    public static function sumTotalByRound($roundID) {
+        $sql = "SELECT sum(bet) FROM round_players where";
+        $sql += "round_id = " . $roundID . " and status = 1 ";
+        return Yii::app()->db->createCommand($sql)->queryScalar();
     }
 
     public static function getAllPlayers($roundID) {
