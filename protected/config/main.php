@@ -6,7 +6,7 @@
 // CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'RoyaltyGames',
+    'name' => 'KhaosGG',
     'theme' => 'classic',
     'preload' => array('log'),
     'import' => array(
