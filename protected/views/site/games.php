@@ -58,7 +58,6 @@ $admins = ['renziito', 'khaosgg'];
         } 
 
     }
-    ()?:
 </style>
 <div class="row">
     <div class="col-md-9 col-height">
@@ -68,9 +67,9 @@ $admins = ['renziito', 'khaosgg'];
                     <div class="col-12">
                         <div class="text-white text-center">
                             <span class="text-white float-left"><?= $data['display_name'] ?>
-                                <b id="points"><?= (isset($data['points']) ? $data['points'] : 0) ?></b>
+                                <b id="points"><?= (isset($data['points']) ? $data['points'] : 0.00) ?></b>
                             </span>
-                            <b>KhaosGG</b>
+                            <!--<b>KhaosGG</b>-->
                             <span class="float-right">
                                 <a class="btn btn-xs btn-primary" href="<?= Yii::app()->createUrl('logout') ?>">
                                     Log Out <i class="fas fa-sign-out-alt"></i>

@@ -60,6 +60,11 @@ class SiteController extends Controller {
                 Yii::app()->request->cookies['uuid'] = $id;
                 $name = new CHttpCookie('name', $data['display_name']);
                 Yii::app()->request->cookies['name'] = $name;
+
+                if (isset($data['points'])) {
+                    $number = $data['points'] / 1000;
+                    $data['points'] = number_format($number, 3, '.', ',');
+                }
                 return $data;
             }
         } else {

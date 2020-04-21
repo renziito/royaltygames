@@ -16,7 +16,7 @@
 <link href="<?= Yii::app()->theme->getBaseUrl() ?>/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="<?= Yii::app()->theme->getBaseUrl() ?>/assets/fonts/font-awesome/css/all.min.css" rel="stylesheet" type="text/css" />
 <script src="<?= Yii::app()->theme->getBaseUrl() ?>/assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
-<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+<title><?php echo CHtml::encode(Yii::app()->name); ?></title>
 <link href="<?= Yii::app()->getBaseUrl() ?>/css/main.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <link href="<?= Yii::app()->getBaseUrl() ?>/protected/extensions/jackpot/dist/css/jackpot.min.css" rel="stylesheet" type="text/css" />
