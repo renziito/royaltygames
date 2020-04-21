@@ -128,7 +128,8 @@ $admins = ['renziito', 'khaosgg'];
             width: 592,
         },
         spinner: {
-            img: '<?= Yii::app()->homeUrl ?>protected/extensions/jackpot/dist/arrow.png'
+            img: '<?= Yii::app()->homeUrl ?>protected/extensions/jackpot/dist/arrow.png',
+            secondsReset: 3
         },
         firebase: {
             apiKey: "AIzaSyApd6cxR14IUKR93jwnbLy68zPzLUL45qU",
