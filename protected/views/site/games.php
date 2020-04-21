@@ -144,6 +144,7 @@ $admins = ['renziito', 'khaosgg'];
             $.get("<?= $this->createUrl('getPoints') ?>", {}, function (data) {
                 if (data) {
                     $('#points').html(data.points);
+                    changeValue(data.points);
                 } else {
                     location.href = "<?= Yii::app()->createUrl('login') ?>";
                 }
@@ -154,6 +155,7 @@ $admins = ['renziito', 'khaosgg'];
             $.get("<?= $this->createUrl('getPoints') ?>", {}, function (data) {
                 if (data) {
                     $('#points').html(data.points);
+                    changeValue(data.points);
                 } else {
                     location.href = "<?= Yii::app()->createUrl('login') ?>";
                 }
@@ -173,6 +175,7 @@ $admins = ['renziito', 'khaosgg'];
 
             if (am <= points) {
                 $('#points').html(points - am);
+                changeValue(points - am);
                 var ajax = new Promise(function (resolve, reject) {
                     $.post("<?= $this->createUrl('addPlayer') ?>", {
                         player: {
@@ -194,8 +197,8 @@ $admins = ['renziito', 'khaosgg'];
         }
     });
 
-    $('#points').on('change', function () {
-        var number = ($(this).val()) / 1000;
+    function changeValue(number) {
+        number = (number / 1000);
         var decimals = 3;
         var dec_point = '.';
         var thousands_sep = ',';
@@ -213,5 +216,6 @@ $admins = ['renziito', 'khaosgg'];
             x1 = x1.replace(rgx, '$1' + thousands_sep + '$2');
 
         $('#pointsShow').html(x1 + x2);
-    });
+    }
+
 </script>
