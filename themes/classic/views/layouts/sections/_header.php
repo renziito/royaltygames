@@ -5,7 +5,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-touch-fullscreen" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta content="Queue" name="description" />
+<meta content="KhaosGG" name="description" />
 <meta name="robots" content="index,follow">
 <meta content="" name="author" />
 
