@@ -67,7 +67,8 @@ $admins = ['renziito', 'khaosgg'];
                     <div class="col-12">
                         <div class="text-white text-center">
                             <span class="text-white float-left"><?= $data['display_name'] ?>
-                                <b id="points"><?= (isset($data['points']) ? $data['points'] : 0) ?></b>
+                                <b id="pointsShow"><?= (isset($data['points']) ? number_format($data['points'], 3, ',', '.') : 0.00) ?></b>
+                                <b id="points" class="hidden"><?= (isset($data['points']) ? $data['points'] : 0) ?></b>
                             </span>
                             <!--<b>KhaosGG</b>-->
                             <span class="float-right">
@@ -191,5 +192,26 @@ $admins = ['renziito', 'khaosgg'];
                 alert("No se puede apostar esa cantidad");
             }
         }
+    });
+
+    $('#points').on('change', function () {
+        var number = $(this).val();
+        var decimals = 3;
+        var dec_point = '.';
+        var thousands_sep = ',';
+
+        number = number.toFixed(decimals);
+
+        var nstr = number.toString();
+        nstr += '';
+        var x = nstr.split('.');
+        var x1 = x[0];
+        var x2 = x.length > 1 ? dec_point + x[1] : '';
+        var rgx = /(\d+)(\d{3})/;
+
+        while (rgx.test(x1))
+            x1 = x1.replace(rgx, '$1' + thousands_sep + '$2');
+
+        $('#pointsShow').html(x1 + x2);
     });
 </script>
