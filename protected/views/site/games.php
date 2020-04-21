@@ -67,8 +67,8 @@ $admins = ['renziito', 'khaosgg'];
                     <div class="col-12">
                         <div class="text-white text-center">
                             <span class="text-white float-left"><?= $data['display_name'] ?>
-                                <b id="pointsShow"><?= (isset($data['points']) ? number_format($data['points'], 3, ',', '.') : 0.00) ?></b>
-                                <b id="points" class="hidden"><?= (isset($data['points']) ? $data['points'] : 0) ?></b>
+                                <b id="pointsShow"><?= (isset($data['points']) ? number_format($data['points'] / 1000, 3, '.', ',') : 0.00) ?></b>
+                                <b id="points" class="d-none"><?= (isset($data['points']) ? $data['points'] : 0) ?></b>
                             </span>
                             <!--<b>KhaosGG</b>-->
                             <span class="float-right">
@@ -195,7 +195,7 @@ $admins = ['renziito', 'khaosgg'];
     });
 
     $('#points').on('change', function () {
-        var number = $(this).val();
+        var number = ($(this).val()) / 1000;
         var decimals = 3;
         var dec_point = '.';
         var thousands_sep = ',';
