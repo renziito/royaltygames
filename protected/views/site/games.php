@@ -168,17 +168,17 @@ $admins = ['renziito', 'khaosgg'];
         var amount = $("#beatAmount").val();
         var name = $("#name").val();
         if (amount > 0 || amount != "") {
-            var am = (parseFloat(amount) * 1000);
+            var am = (parseFloat(amount) / 1000);
 
-            if (am <= points) {
-                $('#points').html(points - am);
+            if (amount <= points) {
+                $('#points').html(points - amount);
                 var ajax = new Promise(function (resolve, reject) {
                     $.post("<?= $this->createUrl('addPlayer') ?>", {
                         player: {
                             rid: jackpot.id,
                             uid: <?= Yii::app()->request->cookies['uuid'] ?>,
                             name: '<?= Yii::app()->request->cookies['name'] ?>',
-                            bet: amount
+                            bet: am
                         }
                     }, function (response) {
                         if (!response.error) {
