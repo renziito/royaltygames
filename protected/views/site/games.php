@@ -67,7 +67,7 @@ $admins = ['renziito', 'khaosgg'];
                     <div class="col-12">
                         <div class="text-white text-center">
                             <span class="text-white float-left"><?= $data['display_name'] ?>
-                                <b id="points"><?= (isset($data['points']) ? $data['points'] : 0.00) ?></b>
+                                <b id="points"><?= (isset($data['points']) ? $data['points'] : 0) ?></b>
                             </span>
                             <!--<b>KhaosGG</b>-->
                             <span class="float-right">
@@ -168,17 +168,17 @@ $admins = ['renziito', 'khaosgg'];
         var amount = $("#beatAmount").val();
         var name = $("#name").val();
         if (amount > 0 || amount != "") {
-            var am = (parseFloat(amount) / 1000);
+            var am = (parseFloat(amount) * 1000);
 
-            if (amount <= points) {
-                $('#points').html(points - amount);
+            if (am <= points) {
+                $('#points').html(points - am);
                 var ajax = new Promise(function (resolve, reject) {
                     $.post("<?= $this->createUrl('addPlayer') ?>", {
                         player: {
                             rid: jackpot.id,
                             uid: <?= Yii::app()->request->cookies['uuid'] ?>,
                             name: '<?= Yii::app()->request->cookies['name'] ?>',
-                            bet: am
+                            bet: amount
                         }
                     }, function (response) {
                         if (!response.error) {
