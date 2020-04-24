@@ -110,7 +110,7 @@ $admins = ['renziito', 'khaosgg'];
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-height">
+    <div class="col-md-3">
         <div class="embed-container">
             <iframe scrolling="no" class="mi-iframe" frameborder="0" src="https://player.twitch.tv?channel=khaosgg"></iframe>
         </div>
