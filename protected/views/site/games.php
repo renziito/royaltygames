@@ -60,7 +60,7 @@ $admins = ['renziito', 'khaosgg'];
     }
 </style>
 <div class="row">
-    <div class="col-md-9 col-height">
+    <div class="col-md-9">
         <div class="row">
             <div class="container-fluid">
                 <div class="row mb-5">
@@ -87,7 +87,7 @@ $admins = ['renziito', 'khaosgg'];
                 <div class="row mb-5">
                     <div class="col-12">
                         <h1 class="text-white text-center">
-                            Jackpot
+                            &nbsp;
                         </h1>
                     </div>
                 </div>

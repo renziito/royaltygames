@@ -17,7 +17,7 @@ $response = curl_exec($curl);
 ?>
 
 <div class="text-center container pt-5 mt-5">
-    <h1 class="mb-5">Khaosgg</h1>
+    <h1 class="mb-5">KhaosGG</h1>
     <?= $response ?>
 </div>
 
