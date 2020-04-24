@@ -120,7 +120,7 @@ $admins = ['renziito', 'khaosgg'];
     </div>
 </div>
 
-<script src="<?= Yii::app()->getBaseUrl(true) ?>/protected/extensions/jackpot/dist/js/jackpot.min.js"></script>
+<script src="<?= Yii::app()->getBaseUrl(true) ?>/protected/extensions/jackpot/dist/js/jackpot.min.js?r<?= uniqid() ?>"></script>
 <script>
     var jackpot = new JackPot({
         roulette: {
