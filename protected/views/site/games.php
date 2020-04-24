@@ -60,7 +60,7 @@ $admins = ['renziito', 'khaosgg'];
     }
 </style>
 <div class="row">
-    <div class="col-md-9">
+    <div class="col-md-9 col-height">
         <div class="row">
             <div class="container-fluid">
                 <div class="row mb-5">
