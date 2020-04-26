@@ -171,7 +171,7 @@ $admins = ['renziito', 'khaosgg'];
         var points = $('#points').html();
         var amount = $("#beatAmount").val();
         var name = $("#name").val();
-        if (amount > 0 || amount != "") {
+        if (parseFloat(amount) > 0.001 && amount != "") {
             var am = (parseFloat(amount) * 1000);
 
             if (am <= points) {
