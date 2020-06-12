@@ -112,10 +112,10 @@ $admins = ['renziito', 'khaosgg'];
     </div>
     <div class="col-md-3">
         <div class="embed-container">
-            <iframe scrolling="no" class="mi-iframe" frameborder="0" src="https://player.twitch.tv?channel=khaosgg"></iframe>
+            <iframe scrolling="no" class="mi-iframe" frameborder="0" src="https://player.twitch.tv?channel=khaosgg&parent=khaosgg.com"></iframe>
         </div>
         <div class="embed-container-large" style="margin-top: 10px;">
-            <iframe scrolling="no" class="mi-iframe" frameborder="0" src="https://www.twitch.tv/embed/khaosgg/chat?darkpopout"></iframe>
+            <iframe scrolling="no" class="mi-iframe" frameborder="0" src="https://www.twitch.tv/embed/khaosgg/chat?darkpopout&parent=khaosgg.com"></iframe>
         </div>
     </div>
 </div>
